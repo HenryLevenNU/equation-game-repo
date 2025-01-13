@@ -9,7 +9,7 @@ game_difficulty, number_of_rounds = settings()
 
 def gameplay(number_of_rounds, game_difficulty):
     """
-    Loops for each round of the game with a new equation each time.
+    Loops for each round of the game with a new equation shown each time.
 
     Parameters:
     number_of_rounds (integer): The total number of rounds to be played.
