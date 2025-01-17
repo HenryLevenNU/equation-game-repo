@@ -1,6 +1,4 @@
-![image](https://github.com/user-attachments/assets/d3bed474-f1f6-4801-8221-cd009fa015ca)![image](https://github.com/user-attachments/assets/73a61efe-cc08-4e4b-b6dd-33efa37b7357)#  Equation Game Documentation
-
-###  Executive Summary
+#  Equation Game Documentation
 
 ## 1.  User Guide
 
@@ -31,15 +29,13 @@ The architecture broke down into three overarching blocks to maximise modularity
 ***Usability***
 
 As seen in the solution architecture diagram above, the system uses handles incorrect inputs for 'Settings' and 'User input', for example in the case of incorrect data types like string, instead of their int/float answer.
-In fact, the code clarifies the question and repeats the question for input until they are successful. This can be seen in the following example:
+In fact, the code clarifies the question and repeats the question for input until they are successful. This can be seen in the following simplified example:
 
 ```
     input_difficulty_complete = False
     while input_difficulty_complete == False:
         try:
             game_difficulty = input("Enter game difficulty: 'Normal'/'Hard' ")
-            # .title() ensures answer is not caps sensitive.
-            game_difficulty = game_difficulty.title()
             valid_difficulty = "Normal", "Hard", "1", "2"
             if game_difficulty in valid_difficulty:
                 input_difficulty_complete = True
@@ -84,24 +80,6 @@ A function was used for increasing the score, and for no change to the score, to
 
 And wrapping it all up, I used pure functions; included docstrings and comments; and structured it in a modular, easy-to-interpret fashion. 
 This makes the code easier to maintain and will allow more functionality to be added down the line as the MVP gets iterated on. 
-```
-def increase_score(current_round, number_of_rounds, score):
-    """
-    Takes score and increases by 1, except during last round.
-
-    Parameters:
-    current_round (int): The current round being played out.
-    number_of_roudns (int): The total number of rounds to be played.
-    score (int): The current score of the game
-
-    Returns
-    score (int): The updated score (added 1) when correct answer.
-    """
-    score += 1
-    if current_round < number_of_rounds:
-        print("\nYour score is now: " + str(score))
-    return score
-```
 
 ### 2.4 Unique Selling Points
 ***Difficulty Levels***
