@@ -30,7 +30,8 @@ def select_rounds():
     while input_rounds_complete == False:
         try:
             number_of_rounds = int(input("Enter a number of rounds to play: "))
-            input_rounds_complete = True
+            if number_of_rounds > 0:
+                input_rounds_complete = True
         except ValueError:
             print("Invalid. Please enter a valid number.")
     return number_of_rounds
