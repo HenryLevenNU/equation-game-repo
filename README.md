@@ -48,7 +48,7 @@ Choose your difficulty level! Are you feeling sensible, or are you feeling brave
 cd /Users/your_name_here/Downloads/equation-game-repo-main
 ```
 
-•Finally, start the game by typing:
+• Start the game by typing:
 
 ```python main.py``` to run the game
 
@@ -56,11 +56,11 @@ cd /Users/your_name_here/Downloads/equation-game-repo-main
 
 Once you start the game using the above instructions, simply follow the on-screen instructions for settings. Input a number 'e.g 5' for number of rounds and, for game difficulty, ensure you type 'Normal' or 'Hard' (not caps sensitive), or alternatively, 1 or 2 respectively.
 
-Round 1 then starts, and you need to work out the value of 𝑥.
+Round 1 then starts, and you need to solve the value of 𝑥.
 
 Answer to 1 decimal place if it is a decimal.
 
-You can answer without decimals if it is a whole number.
+You can answer without decimals, if it is a whole number.
 
 Learn more about solving equations [here](https://www.cliffsnotes.com/study-guides/basic-math/basic-math-and-pre-algebra/variables-algebraic-expressions-and-simple-equations/solving-simple-equations)
 
@@ -80,7 +80,7 @@ x * 10 = 5
 The answer is x=0.5
 ```
 
-Keep answering until the end of the game. If you want to play more, start the game again by typing:
+Keep answering until the end of game. If you want to play more, start the game again by typing:
 
 ```python main.py```
 
@@ -92,11 +92,11 @@ Keep answering until the end of the game. If you want to play more, start the ga
 
 The architecture broke down into four overarching blocks to maximise modularity:
 
-•	The introduction and Settings page
+•	The Introduction/Settings page
 
-•	The equation generation based on prior Settings
+•	The Equation Generation based on Settings
 
-•	The answer checking and subsequent effect on score
+•	The Answer Checking and impact on score
 
 •	The ‘main’ gameplay which structures the previous 3 aspects.
 
@@ -141,11 +141,17 @@ Additionally, I used pure functions; included docstrings and comments; and struc
 In the brief, the game needed to keep a score across multiple rounds. A global variable 'score' was created for this, which was used as a parameter and then returned from each function.
 A function was used for increasing the score, and for no change to the score, to modularise this code and call one of them for each round. 
 
-### 2.4 Unique Selling Points
+### 2.4 Technical Notes
+
+Clone the repository by doing:
+
+```git clone git@github.com:HenryLevenNU/equation-game-repo.git```
+
+### 2.5 Unique Selling Points
 
 ***Difficulty Levels***
-The game also needs to accommodate a range of users. Therefore, the game was designed with different difficulty levels for varying mathematical skill levels of users in mind. 
-To do this, 'max_value' takes either 14 for Hard mode, or 8 for Normal mode. To improve this further, '1' in the following example can be replaced by a var, min_value which could be in the negatives for Hard mode.
+The game needs to accommodate a range of users. Therefore, I designed it with difficulty levels for varying mathematical skill levels of users.
+To do this, 'max_value' takes either 14 for Hard mode, or 8 for Normal mode. To improve this further, '1' in the following example can be replaced by a var, min_value which could be negative for Hard mode.
 ```
     max_value = difficulty_values(game_difficulty)
     integer_1 = random.randint(1, max_value)
@@ -154,7 +160,7 @@ To do this, 'max_value' takes either 14 for Hard mode, or 8 for Normal mode. To 
 
 ***Unique Operator each Round***
 
-In the example below, an ‘array’ of 4 string operators (+, -, * and /) is created.
+In below example, an ‘array’ of 4 string operators (+, -, * and /) is created.
 
 One of these operators is chosen, and corresponds to a random number between 1-4 which determines which position of the array is selected. This selected string is later used in the printed equation.
 
