@@ -40,12 +40,16 @@ Choose your difficulty level! Are you feeling sensible, or are you feeling brave
 
 ***Run the Game***
 
-*Navigate to the 'Terminal' on Mac (or Command Prompt on Windows).
-*Write 'cd ' and then paste in the folder directory like this:
+• Navigate to the 'Terminal' on Mac (or Command Prompt on Windows).
+
+• Write 'cd ' and then paste in the folder directory like this:
+
 ```
 cd /Users/your_name/Downloads/equation-game-repo-main
 ```
-*Finally, start the game by typing:
+
+•Finally, start the game by typing:
+
 ```python main.py``` to run the game
 
 ### 1.4  Game Instructions
@@ -58,6 +62,9 @@ Also, ensure you type 'Normal' or 'Hard' (not caps sensitive), or alternatively,
 
 Round 1 will then start, and you will need to work out the value of 𝑥 by using algebraic principles. Learn more about solving simple algebraic equations [here](https://www.cliffsnotes.com/study-guides/basic-math/basic-math-and-pre-algebra/variables-algebraic-expressions-and-simple-equations/solving-simple-equations):
 
+Keep answering the equation until the end of the game. If you want to play more rounds, start the game again by typing:
+
+```python main.py```
 
 ## 2.  Technical Documentation
 
