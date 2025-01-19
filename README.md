@@ -2,15 +2,50 @@
 
 ## 1.  User Guide
 
-### 1.1  Setup
+### 1.1  Overview
+
+The Equation Game is an exciting game where you can prove your mathematical prowess. Regurgitate your High School algebra knowledge by solving each equation that gets sent your way! Watch out though... your score gets added up and displayed to you at the end. 
+
+### 1.2  Features
+
+Unique numbers and operator for each equation! After all, you don't want to see the same old equation each time, do you?
+
+Choose how many rounds YOU want to play! Your wish is my command. 
+
+Choose your difficulty level! Are you feeling sensible, or are you feeling brave enough to conquor the world?
+
+### 1.3  Setup
+
+***Prerequisites***
 
 You will need Python 3.7 (or later versions) to run the game.
-Download from: https://www.python.org/downloads/
+You can download Python from: https://www.python.org/downloads/
 
+Visit https://github.com/HenryLevenNU/equation-game-repo
+Click the green button called ‘<> Code’ 
+In the drop-down menu that appears, click ‘Download ZIP’
+This will start downloading the ZIP folder to your device
+Open your Downloads folder in 'Finder' (File Explorer for Windows)
+Unzip it so it becomes a regular folder (by double clicking it on Mac)
+Right click -> Get info -> and copy the folder directory 
 
-### 1.2  Game Instructions
+***Run the Game***
 
+Navigate to the 'Terminal' on Mac (or Command Prompt on Windows).
+Write 'cd ' and then paste in the folder directory like this:
+```
+cd /Users/your_name/Downloads/equation-game-repo-main
+```
+Finally, start the game by typing:
+```python main.py``` to run the game
 
+### 1.4  Game Instructions
+
+Once you start the game using the above instructions, simply follow the on-screen instructions.
+
+It will first ask you to choose the Settings by which the game will be determined. Remember to input a number 'e.g 5' for number of rounds
+
+Then you get launched in 
 
 ## 2.  Technical Documentation
 
