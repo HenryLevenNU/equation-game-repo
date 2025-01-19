@@ -60,7 +60,23 @@ It will first ask you to choose the Settings by which the game will be determine
 
 Also, ensure you type 'Normal' or 'Hard' (not caps sensitive), or alternatively, 1 or 2 for these respectively.
 
-Round 1 will then start, and you will need to work out the value of 𝑥 by using algebraic principles. Learn more about solving simple algebraic equations [here](https://www.cliffsnotes.com/study-guides/basic-math/basic-math-and-pre-algebra/variables-algebraic-expressions-and-simple-equations/solving-simple-equations):
+Round 1 will then start, and you will need to work out the value of 𝑥 by using algebraic principles. Learn more about solving simple algebraic equations [here](https://www.cliffsnotes.com/study-guides/basic-math/basic-math-and-pre-algebra/variables-algebraic-expressions-and-simple-equations/solving-simple-equations)
+
+
+Example 1:
+```
+x + 3 = 5
+
+The answer is x = 2
+```
+
+
+Example 2: 
+```
+x * 10 = 5
+
+The answer is x = 0.5
+```
 
 Keep answering the equation until the end of the game. If you want to play more rounds, start the game again by typing:
 
