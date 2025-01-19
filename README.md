@@ -8,7 +8,7 @@ The Equation Game is an exciting game where you can prove your mathematical prow
 
 ### 1.2  Features
 
-Unique numbers and operator for each equation! After all, you don't want to see the same old equation each time, do you?
+Unique numbers and operator for each equation! After all, surely you don't want to see the same old equation each time?
 
 Choose how many rounds YOU want to play! Your wish is my command. 
 
@@ -28,7 +28,7 @@ Choose your difficulty level! Are you feeling sensible, or are you feeling brave
 
 • Click the green button called ‘<> Code’ 
 
-• In the drop-down menu that appears, click ‘Download ZIP’
+• In the drop-down menu, click ‘Download ZIP’
 
 • This will start downloading the ZIP folder to your device
 
@@ -42,10 +42,10 @@ Choose your difficulty level! Are you feeling sensible, or are you feeling brave
 
 • Navigate to the 'Terminal' on Mac (or Command Prompt on Windows).
 
-• Write 'cd ' and then paste in the folder directory like this:
+• Write 'cd ' and then paste the folder directory like so:
 
 ```
-cd /Users/your_name/Downloads/equation-game-repo-main
+cd /Users/your_name_here/Downloads/equation-game-repo-main
 ```
 
 •Finally, start the game by typing:
@@ -54,20 +54,22 @@ cd /Users/your_name/Downloads/equation-game-repo-main
 
 ### 1.4  Game Instructions
 
-Once you start the game using the above instructions, simply follow the on-screen instructions.
+Once you start the game using the above instructions, simply follow the on-screen instructions for settings. Input a number 'e.g 5' for number of rounds and, for game difficulty, ensure you type 'Normal' or 'Hard' (not caps sensitive), or alternatively, 1 or 2 respectively.
 
-It will first ask you to choose the Settings by which the game will be determined. Remember to input a number 'e.g 5' for number of rounds
+Round 1 then starts, and you need to work out the value of 𝑥.
 
-Also, ensure you type 'Normal' or 'Hard' (not caps sensitive), or alternatively, 1 or 2 for these respectively.
+Answer to 1 decimal place if it is a decimal.
 
-Round 1 will then start, and you will need to work out the value of 𝑥 by using algebraic principles. Learn more about solving simple algebraic equations [here](https://www.cliffsnotes.com/study-guides/basic-math/basic-math-and-pre-algebra/variables-algebraic-expressions-and-simple-equations/solving-simple-equations)
+You can answer without decimals if it is a whole number.
+
+Learn more about solving equations [here](https://www.cliffsnotes.com/study-guides/basic-math/basic-math-and-pre-algebra/variables-algebraic-expressions-and-simple-equations/solving-simple-equations)
 
 
 Example 1:
 ```
 x + 3 = 5
 
-The answer is x = 2
+The answer is x=2
 ```
 
 
@@ -75,10 +77,10 @@ Example 2:
 ```
 x * 10 = 5
 
-The answer is x = 0.5
+The answer is x=0.5
 ```
 
-Keep answering the equation until the end of the game. If you want to play more rounds, start the game again by typing:
+Keep answering until the end of the game. If you want to play more, start the game again by typing:
 
 ```python main.py```
 
@@ -88,7 +90,7 @@ Keep answering the equation until the end of the game. If you want to play more 
 
 ![image](https://github.com/user-attachments/assets/2eb7bebd-41a8-4389-99c7-535273853ede)
 
-The architecture broke down into three overarching blocks to maximise modularity:
+The architecture broke down into four overarching blocks to maximise modularity:
 
 •	The introduction and Settings page
 
@@ -102,17 +104,17 @@ The architecture broke down into three overarching blocks to maximise modularity
 
 ***Usability***
 
-As seen in the solution architecture diagram above, the system uses handles incorrect inputs for 'Settings' and 'User input', for example in the case of incorrect data types like string, instead of their int/float answer.
+As seen in the solution architecture diagram, the system handles incorrect inputs for 'Settings' and 'User input', for example in the case of incorrect data types like string, instead of their int/float answer.
 In fact, the code clarifies the question and repeats the question for input until successful.
 
 ***Reliability***
 
-Command Line Interfaces are performant, so the Python program should run instantly. 
-Rigorous testing was carried out during and after development to ensure that all known bugs were fixed. 
+Command Line Interfaces (CLI) are performant, so the Python program should run instantly. 
+Rigorous testing was carried out during and after development to fix bugs.
 
 ***Scalability***
 
-The code will be run locally. Additionally, it was programmed in a modular way, which allows for more functionality to be added down the line. 
+The code will be run locally. Additionally, it was programmed in a modular way, so more functionality can be added down the line. 
 
 
 ### 2.3  Functional Requirements
@@ -156,7 +158,7 @@ In the example below, an ‘array’ of 4 string operators (+, -, * and /) is cr
 
 One of these operators is chosen, and corresponds to a random number between 1-4 which determines which position of the array is selected. This selected string is later used in the printed equation.
 
-Meanwhile, the string needs to be converted into a more usable function. The ‘operator’ library that I used is a functional interface to give me more control to the standard operators. However, there is an extra layer of complexity as the operator function needs to be the opposite to the printed operator, due to the positioning of the equation elements. 
+Meanwhile, the string needs to be converted into a more usable function. The ‘operator’ library is a functional interface to give me more control than the standard operators. However, there is an extra layer of complexity as the operator function needs to be the opposite to the printed operator, due to the positioning of the equation elements. 
 
 E.g.
 x / 5 = 10
@@ -172,11 +174,11 @@ def random_operator():
 ```
 
 ### 2.4  Minimal Viable Product (MVP) - Conclusion
-Considering the time constraints (Estimated: 15 hours programming and 5 hours training), I decided early-on to use a CLI to run the code rather than a GUI. The client brief allowed for both. I also decided to offer some customisability in settings (though limited). 
+Considering the time constraints (Estimated: 15 hours programming and 5 hours training), I decided early on to use a CLI to run the code rather than a GUI. The client brief allowed for both. I also decided to offer some customisability in settings (though limited). 
 
 This can be iterated on the MVP – and next steps could include using more operators and allowing for negative values in Hard mode. 
 
-However, the code is designed in a modular way to make changes easy to implement. Given more time, the project could be moved to a GUI to build on the user-centred design (UCD) of my functional and non-functional requirements.
+However, the code is designed in a modular way to make changes easy-to-implement. Given more time, the project could be moved to a GUI to build on the user-centred design (UCD) of my functional and non-functional requirements.
 
 
 
