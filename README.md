@@ -18,25 +18,34 @@ Choose your difficulty level! Are you feeling sensible, or are you feeling brave
 
 ***Prerequisites***
 
-You will need Python 3.7 (or later versions) to run the game.
-You can download Python from: https://www.python.org/downloads/
+• You will need Python 3.7 (or later versions) to run the game.
 
-Visit https://github.com/HenryLevenNU/equation-game-repo
-Click the green button called ‘<> Code’ 
-In the drop-down menu that appears, click ‘Download ZIP’
-This will start downloading the ZIP folder to your device
-Open your Downloads folder in 'Finder' (File Explorer for Windows)
-Unzip it so it becomes a regular folder (by double clicking it on Mac)
-Right click -> Get info -> and copy the folder directory 
+• You can download Python by clicking [here](https://www.python.org/downloads/)
+
+***Install the game***
+
+• Visit my [Github page here](https://github.com/HenryLevenNU/equation-game-repo)
+
+• Click the green button called ‘<> Code’ 
+
+• In the drop-down menu that appears, click ‘Download ZIP’
+
+• This will start downloading the ZIP folder to your device
+
+• Open your Downloads folder in 'Finder' (File Explorer for Windows)
+
+• Unzip it so it becomes a regular folder (by double clicking it on Mac)
+
+• Right click -> Get info -> and copy the folder directory 
 
 ***Run the Game***
 
-Navigate to the 'Terminal' on Mac (or Command Prompt on Windows).
-Write 'cd ' and then paste in the folder directory like this:
+*Navigate to the 'Terminal' on Mac (or Command Prompt on Windows).
+*Write 'cd ' and then paste in the folder directory like this:
 ```
 cd /Users/your_name/Downloads/equation-game-repo-main
 ```
-Finally, start the game by typing:
+*Finally, start the game by typing:
 ```python main.py``` to run the game
 
 ### 1.4  Game Instructions
@@ -45,7 +54,10 @@ Once you start the game using the above instructions, simply follow the on-scree
 
 It will first ask you to choose the Settings by which the game will be determined. Remember to input a number 'e.g 5' for number of rounds
 
-Then you get launched in 
+Also, ensure you type 'Normal' or 'Hard' (not caps sensitive), or alternatively, 1 or 2 for these respectively.
+
+Round 1 will then start, and you will need to work out the value of 𝑥 by using algebraic principles. Learn more about solving simple algebraic equations [here](https://www.cliffsnotes.com/study-guides/basic-math/basic-math-and-pre-algebra/variables-algebraic-expressions-and-simple-equations/solving-simple-equations):
+
 
 ## 2.  Technical Documentation
 
